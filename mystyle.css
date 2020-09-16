@@ -2,3 +2,7 @@ body { background-image: url("nature.jpg");
         background-repeat: repeat;
         background-size: 100%;
 }
+head { text-align: center;
+        font-family: Didot, serif;
+        color: white;
+}
