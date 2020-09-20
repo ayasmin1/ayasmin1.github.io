@@ -1,0 +1,47 @@
+body { background-color: rgb(255, 255, 255);
+    font-family: 'Kalam';font-size: 22px;
+    color: black;
+}
+h1 { text-align: center;
+    font-size: xx-large;
+    text-shadow: 4px 4px 4px #aaa;
+    border-style: inset;
+}
+#myBorder { color: black;
+    text-align: center;
+    border: 7px solid rgb(215, 218, 250);
+    box-shadow: 20px 20px 10px rgb(191, 197, 250);
+}
+#my1button {
+    background-color: rgb(255, 255, 255);
+    margin: 5vh;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+}
+button {
+    padding: 15px;
+    border: solid 5px;
+    border-radius: 55px;
+    background-color: rgb(237, 220, 220);
+    margin: 20px;
+   }
+button:hover {
+    background-color: rgb(255, 255, 255);
+   }
+h2 { text-align: center;
+    font-size: xx-large;
+    text-shadow: 4px 4px 4px #aaa;
+    border-style: inset;
+}
+img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 0px 15px 15px 0px;
+}
+#myBorder2 { color: black;
+    text-align: center;
+    border: 7px solid rgb(215, 218, 250);
+    box-shadow: 20px 20px 10px rgb(191, 197, 250);
+}
