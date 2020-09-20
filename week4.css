@@ -1,4 +1,4 @@
-body { background-color: rgb(255, 255, 255);
+body { background-color: rgb(233, 239, 255);
     font-family: 'Kalam';font-size: 22px;
     color: black;
 }
@@ -13,7 +13,7 @@ h1 { text-align: center;
     box-shadow: 20px 20px 10px rgb(191, 197, 250);
 }
 #my1button {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(233, 239, 255);
     margin: 5vh;
     padding: 5px;
     margin: 0;
