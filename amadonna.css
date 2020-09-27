@@ -1,0 +1,180 @@
+    body {
+        background-color: #F4C2C2;
+        color: white;
+    }
+    
+    p1 {
+        font-family: cursive;
+        color: hotpink;
+        font-size: 20pt;
+    }
+    
+    p2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+    
+    div.a {
+        text-align: center;
+    }
+    
+    div.solid {
+        border: 8px;
+        border-style: double;
+        color: hotpink;
+    }
+    
+    div.b {
+        text-align: left;
+    }
+
+    div.ind {
+        text-indent: 30px;
+    }
+    
+    img {
+        width: 250px;
+        height: 250px;
+        float: center;
+        margin: 0px 15px 15px 0px;
+    }
+    
+    a:link {
+        background-color: none;
+    }
+    
+    a:visited {
+        background-color: white;
+    }
+    
+    a:hover {
+        background-color: hotpink;
+    }
+    
+    a:active {
+        background-color: white;
+    }
+    
+    h1 {
+        font-family: cursive;
+        text-align: center;
+        font-size: 20pt;
+    }
+    
+    div.s {
+        border: 8px;
+        border-style: double;
+        color: hotpink;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    div.h {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .TextWrap {
+        height: 350px;
+        width: 450px;
+        float: right;
+        margin: 20px;
+        border: 7px;
+        border-style: dotted;
+        color: goldenrod;
+    }
+    
+    .TextWrapLeft {
+        height: 350px;
+        width: 450px;
+        float: left;
+        margin: 20px;
+        border: 7px;
+        border-style: dotted;
+        color: goldenrod;
+    }
+    
+    p5 {
+        font-size: 20px;
+    }
+    
+    p6 {
+        font-size: 20px;
+    }
+    
+    div.align {
+        height: 270px;
+        width: 370px;
+        float: left;
+        margin: 20px;
+    }
+    
+    div.r {
+        font-family: 'Playfair Display', serif;
+    }
+    
+    h1 {
+        font-family: cursive;
+        color: hotpink;
+        font-size: 20pt;
+        border: 8px;
+        border-style: double;
+    }
+    
+    div.z {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+    
+    .column {
+        float: left;
+        padding: 15px;
+        width: 25%;
+        height: 500px;
+        width: 500px;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    footer {
+        text-align: center;
+        padding: 12px;
+        background-color: #f2caca;
+        color: hotpink;
+      }
+
+      .button {
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 3px 1px;
+            transition-duration: 0.4s;
+            cursor: alias;
+          }
+
+    .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid hotpink;
+          }
+          
+    .button1:hover {
+            background-color: hotpink;
+            color: white;
+          }
+          
