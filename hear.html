@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="selfportrait.css">
+    <title>Through my senses: Sound</title>
+    <script>
+        function getVote(int) {
+          var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+              document.getElementById("poll").innerHTML=this.responseText;
+            }
+          }
+          xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+          xmlhttp.send();
+        }
+        </script>
+</head>
+
+<body>
+    <h1><u><a href="selfportrait.html">The Things I Hear</a></u></h1>
+    <p1> I’ve started listening to many more artists in this past year, as quarantine has allowed me to look deeper into other 
+        types of music. I mostly used to enjoy rap and hiphop music, specifically artists like J. Cole (I love this music so much,
+         I wrote an entire analytical essay on his album), Lil Uzi, Kendrick Lamar, etc. However, recently I’ve started listening to
+          alot more R&B music; I realized I didn’t invest alot of my time listening to music that calmed me down but rather hyped me up.
+           My favorite artists right now are Rex Orange County, 6LACK, Sza, Giveon, and many more.  
+    </p1>
+    <br><br>
+        <div class="grid-container">
+        <iframe src="https://open.spotify.com/embed/playlist/4esTsiDhMus4DKiGtW3Wis" width="500" height="380" frameborder="0" allowtransparency="true"
+         allow="encrypted-media"></iframe>
+            <div class="music"></div>
+            <div class="links">
+        <p2><div id="poll">
+            <h3>Do you like my playlist?</h3>
+            <form>
+            Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+            No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+            </form>
+            </div></p2>
+          
+
+
+
+
+
+
+
+</body>
