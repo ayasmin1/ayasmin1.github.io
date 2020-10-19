@@ -99,7 +99,7 @@ footer {
         grid-area: 3 / 3 / 4 / 4; 
     }
 
-    .parent2 {
+.parent2 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -116,3 +116,14 @@ footer {
         .div7a { grid-area: 3 / 3 / 4 / 4; }
         .div8 { grid-area: 2 / 1 / 3 / 2; }
         .div9 { grid-area: 2 / 3 / 3 / 4; }
+
+    .parent3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .div1b { grid-area: 1 / 1 / 2 / 2; }
+            .div2b { grid-area: 1 / 2 / 2 / 3; }
