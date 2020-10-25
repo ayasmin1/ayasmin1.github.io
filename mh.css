@@ -144,23 +144,6 @@ footer {
     transition-delay: 0.3s;
 }
 
-.container {
-    position: relative;
-    max-width: 350px; /* Maximum width */
-    margin: 0 auto; 
-  }
-  
-  .container .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: #e9e9e9;
-    opacity: 0.3; 
-    color: #000000; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-  }
-
 .pics{
     display:flex;
     justify-content: center;
