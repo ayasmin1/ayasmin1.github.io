@@ -33,13 +33,50 @@
 <br><br>
 
 <body>
-    <h4><b>Depending on your mood, choose a message..</b></h4>
-    <div class="cont">
-        <a href=""><img src="si.png" target="_blank" class="stone"></a>
-		<a href="runes/uruz"><img src="si.png" target="_blank" class="stone"></a>
-		<a href="runes/thurisaz"><img src="si.png" target="_blank" class="stone"></a>
-		<a href="runes/ansuz"><img src="si.png" target="_blank" class="stone"></a>
-		<a href="runes/raido"><img src="si.png" target="_blank" class="stone"></a>
+    <script>
+        // function to calculate your sun sign
+        function calcMessage()
+        {
+            var mood = document.getElementById("quote").value;
+            if (mood == "Feeling Down")
+            {
+                    document.getElementById("goToMess").action = "feelingdown.html";
+            }
+            else if (mood == "Feeling Proud of Yourself")
+            {
+                document.getElementById("goToMess").action = "feelingpoy.html";
+            }
+            else if (mood == "Feeling like giving up")
+            {
+                document.getElementById("goToMess").action = "feelinglgu.html";
+            }
+            else if (mood == "Feeling Stressed in Life")
+            {
+                document.getElementById("goToMess").action = "feelingsil.html";
+            }
+            else if (mood == "Feeling pressured due to difficult times")
+            {
+                document.getElementById("goToMess").action = "feelingpdtdt.html";
+            }
+        }
+    </script>
+    <body>
+        <div class="moon">
+            <div class="prompt">Depending on your mood, choose a message..</div>
+            <br>
+            <form id="goToMess" action="error.html">
+                <select class="options" name="mds" id="quote">
+                    <option class="mood">Mood</option>
+                    <option class="mood">Feeling Down</option>
+                    <option class="mood">Feeling Proud of Yourself</option>
+                    <option class="mood">Feeling like giving up</option>
+                    <option class="mood">Feeling Stressed in Life</option>
+                    <option class="mood">Feeling pressured due to difficult times</option>
+                </select>
+                
+                <input class="options" type="submit" onclick="calcMessage()">
+            </form>
+        </div>
 
 
 </body>
