@@ -18,7 +18,7 @@
                     <a href="info.html">information</a>
                 </li>
                 <li>
-                    <a href="mentalh.html" class="home">Mental Health</a>
+                    <p>Mental Health</p>
                 </li>
                 <li>
                     <a href="tips.html">tips</a>
@@ -30,7 +30,6 @@
         </div>
     </nav>
 </header>
-<br><br>
 
 <body>
     <script>
@@ -42,7 +41,7 @@
             {
                     document.getElementById("goToMess").action = "feelingdown.html";
             }
-            else if (mood == "Feeling Proud of Yourself")
+            else if (mood == "Feeling Proud of Yourself with nobody to tell")
             {
                 document.getElementById("goToMess").action = "feelingpoy.html";
             }
@@ -61,14 +60,19 @@
         }
     </script>
     <body>
-        <div class="moon">
+        <h5>Messages of Comfort</h5>
+        <h6><u>Dedicated to those who don't hear enough of what they need to hear. Things are tough but 
+            I will always be here as guidance to help those who don't have others to speak their mind to.
+            You will be heard and appreciated...
+        </u></h6>
+        <div class="pos" id="prop">
             <div class="prompt">Depending on your mood, choose a message..</div>
             <br>
             <form id="goToMess" action="error.html">
                 <select class="options" name="mds" id="quote">
                     <option class="mood">Mood</option>
                     <option class="mood">Feeling Down</option>
-                    <option class="mood">Feeling Proud of Yourself</option>
+                    <option class="mood">Feeling Proud of Yourself with nobody to tell</option>
                     <option class="mood">Feeling like giving up</option>
                     <option class="mood">Feeling Stressed in Life</option>
                     <option class="mood">Feeling pressured due to difficult times</option>
@@ -77,6 +81,7 @@
                 <input class="options" type="submit" onclick="calcMessage()">
             </form>
         </div>
+
 
 
 </body>
