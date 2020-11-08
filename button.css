@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color:white;
+}
+div {
+    display: flex;
+   }
+   
+   button {
+    padding: 200px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   
+   
+   button:hover {
+    background-color:yellow;
+   }
