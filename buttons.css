@@ -4,7 +4,12 @@ body{
 }
 
 h1{
-    color: white;
+    color: yellow;
+    text-align: center;
+}
+
+h2{
+    color: black;
     text-align: center;
 }
 

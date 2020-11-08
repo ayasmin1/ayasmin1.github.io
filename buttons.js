@@ -1,21 +1,14 @@
-console.log("js!");
-
-let theButton = document.querySelector("button");
-let theTxt = document.querySelector('h2');
-let theBody = document.querySelector('body');
-
-
-function lightSwitch(num)
+function lightSwitch_on()
 {
-    var pic; // declaring the variable
-        if(num == 0) // when value is 0, it'll show the off-switch pictures
-        {
-            pic="OFF.png";
-        }
-        else(num == 1) // when value is 1, it'll show the on-switch picture
-        {
-            pic="ON.png";
-            document.body.style.backgroundColor = "yellow";
-        }
-    document.getElementById('switch').src=pic; // this links the images to the already declared id of SWITCH from my HTML back onto my script code
+    document.getElementById('switch').src='ON.png'
+    document.body.style.backgroundColor = "yellow";
+    document.getElementById("s2").innerHTML= "As Drake woud say <br> Look, I just flipped the switch (flipped, flipped)"
 }
+
+function lightSwitch_off()
+{
+    document.getElementById('switch').src='OFF.png'
+    document.body.style.backgroundColor = "black";
+    document.getElementById("s1").innerHTML= "It's dark in here, lets turn on the lights!"
+}
+
