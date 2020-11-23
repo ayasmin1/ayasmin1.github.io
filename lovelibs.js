@@ -20,6 +20,7 @@ var LoveLibs = function() {
     var adjective2 = document.getElementById("adjective2").value;  
     var salutation = document.getElementById("salutation").value; 
      // prrocessing all inpurs into the story 
+     //https://cf.ltkcdn.net/teens/files/3126-My-Epic-Love-Story-madlib.pdf
     storyDiv.innerHTML = "<span style='font-size:20px'>" + "It was a " + adjective1 + ", summer afternoon when he " + verb1 + " by me and said, 'Hey.' My eyes " + verb2 + " as my heartbeat fluttered. In that instant I knew " + propername + " and I would love each other for " + lengthoftime + ". 'Hey,' I said back. Then he looked deep into my " +     bodypart + " and replied, ' " + explanation + " ' , you are the " + comparison + " girl I have ever seen. We sat in the " + place +     " and stared at each other for hours. As his hand " + adverb + " touched my hand, sparks flew. We talked about " + noun1 +     " and other important details of our lives. He loved " + food + " and " + pluralanimal + " almost as much as I loved him. He offered to show me his " +     noun2 + " collection. For " + number + " days we talked and " + verb3 + " . The warm summer days turned " + adjective2 + " and he had to leave. I did not even get to say " +     salutation + " ." + "</span>";
 } 
 $(document).ready(function() {  
