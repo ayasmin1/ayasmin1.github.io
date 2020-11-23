@@ -6,7 +6,7 @@ var TKLibs = function() {
     var adjective = document.getElementById("adjective").value;
     var adverb = document.getElementById("adverb").value;
     // prrocessing all inpurs into the story
-    storyDiv.innerHTML = "The day I saw the Tiger King " + verb + " was one of the most interesting days of the year. After he did that, the king played chess on his brother's " + noun + " and then combed his " + adjective + " hair with a comb made out of old fish bones. Later that same day, I saw the Tiger King dance " + adverb + "in front of an audience of kangaroos and wombats."
+    storyDiv.innerHTML = "<span style='font-size:20px', 'text-align:center'>" + "The day I saw the Tiger King " + verb + " was one of the most interesting days of the year. After he did that, the king played chess on his brother's " + noun + " and then combed his " + adjective + " hair with a comb made out of old fish bones. Later that same day, I saw the Tiger King dance " + adverb + "in front of an audience of kangaroos and wombats." + "</span>";
 }
 
 $(document).ready(function() {
@@ -14,6 +14,7 @@ $(document).ready(function() {
     $('#lib-button').click(function() {
         TKLibs();
     });
+
     // this will call the overlay and content to open the pop-up box
     $(".open").on("click", function() {
         $(".poverlay, .pcontent").addClass("active");
@@ -23,4 +24,5 @@ $(document).ready(function() {
     $(".close, .poverlay").on("click", function() {
         $(".poverlay, .pcontent").removeClass("active");
     });
+
 })

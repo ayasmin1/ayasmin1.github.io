@@ -167,8 +167,8 @@ h5{
 .wrap {
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -190,6 +190,7 @@ h5{
     outline: none;
     position: relative;
     padding: 10px;
+    display:flex;
     align-items: center;
     justify-content: center;
 }
@@ -295,4 +296,12 @@ button:hover {
 
 h2{
     font-size: 13px;
+}
+
+.last{
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    color: rgb(43, 15, 11);
+    font-style: oblique;
+    text-align: center;
 }
