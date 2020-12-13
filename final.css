@@ -1,12 +1,17 @@
 body{
-    background-color:rgba(144, 96, 48, 0.747) ;
+    background-image: url(https://singularity-ffc.s3.amazonaws.com/products/91488/images/91488_91ec14c2-373b-4a1c-9154-12823aef3710.gif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 13px;
 }
 
 .pictures{
@@ -15,6 +20,7 @@ body{
     object-fit: cover;   
     opacity: 1;
     transition: .5 ease;
+    border-radius: 10px;
 }
   
 .overlay {
@@ -28,6 +34,7 @@ body{
     opacity: 0;
     transition: .5s ease;
     background-color: blanchedalmond;
+    border-radius: 10px;
   }
 
   .goal1:hover .overlay {
@@ -94,6 +101,19 @@ body{
 .goal6 { 
     grid-area: 2 / 5 / 4 / 7; 
     position: relative;
+}
+
+.carousel-inner {
+  height: 600px;
+}
+
+.caroimg{
+  height: 600px;
+}
+
+
+.headingcaro{
+  font-size: 100px;
 }
 
 
