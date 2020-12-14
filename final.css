@@ -6,7 +6,7 @@ body{
     background-size: cover;
 
 }
-
+/* grid for main final page */
 .main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -103,6 +103,7 @@ body{
     position: relative;
 }
 
+/* BOOTSTRAP FIXES START */
 .carousel-inner {
   height: 600px;
 }
@@ -115,12 +116,14 @@ body{
 .headingcaro{
   font-size: 100px;
 }
+/* BOOTSTRAP FIXES END */
 
 .pics{
   display:flex;
   justify-content: center;
 }
 
+/* Hover card that shifts from left to right START */
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -198,15 +201,17 @@ body{
   display:inline-block;
   font-size: 19px;
 }
+/* Hover card that shifts from left to right END */
 
-.wrapper {
+/* Hover card that slides up START */
+.wrap {
   display: -webkit-box;
   display: flex;
   width: 90%;
   justify-content: space-around;
 }
 
-.wrapper {
+.wrap {
   display: -webkit-box;
   display: flex;
   width: 100%;
@@ -282,6 +287,7 @@ body{
   margin-top: 3px;
 }
 
+/* Hover card that slides up END */
 
 /* Remove margins and padding from the list */
 ul {
@@ -306,24 +312,24 @@ ul li {
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* odd-list items color r diffeerent here */
 ul li:nth-child(odd) {
   background: #5b33127e;
 }
 
-/* Darker background-color on hover */
+/* hover color */
 ul li:hover {
   background: rgb(170, 159, 159);
 }
 
-/* When clicked on, add a background color and strike out text */
+/* strike out text */
 ul li.checked {
   background:#b29f94;
   color: rgb(126, 47, 47);
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* checked once clicked on*/
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -337,7 +343,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* button close */
 .close {
   position: absolute;
   right: 0;
@@ -350,7 +356,6 @@ ul li.checked::before {
   color: rgb(204, 146, 146);
 }
 
-/* Style the header */
 .header {
   background-color: #b29f94;
   margin: 55px;
@@ -359,14 +364,13 @@ ul li.checked::before {
   text-align: center;
 }
 
-/* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
+/* input style */
 input {
   margin: 0;
   border: none;
@@ -377,7 +381,7 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* Style the "newgoal" button */
 .addBtn {
   padding: 8px;
   width: 25%;
@@ -395,6 +399,7 @@ input {
   background-color: #5b33127e;
 }
 
+/* NAV bar START */
 .topnav {
   overflow: hidden;
   background-color: rgba(51, 51, 51, 0.493);
@@ -418,3 +423,4 @@ input {
   background-color: #b29f948a;
   color: white;
 }
+/* NAV bar START */

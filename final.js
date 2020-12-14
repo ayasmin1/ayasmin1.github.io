@@ -1,3 +1,6 @@
+//https://medium.com/@diogo.fg.pinheiro/simple-to-do-list-app-with-node-js-and-mongodb-chapter-1-c645c7a27583
+//https://www.w3schools.com/howto/howto_js_todolist.asp
+//https://codepen.io/wesleyd8/pen/VpRrVJ
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
