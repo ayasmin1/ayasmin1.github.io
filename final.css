@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://singularity-ffc.s3.amazonaws.com/products/91488/images/91488_91ec14c2-373b-4a1c-9154-12823aef3710.gif);
+    background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,15 +132,16 @@ body{
   height: 100%;
   width: 471px;
   flex-grow: 1000;
+  font-size: 19px;
   display:inline-block;
 }
 
 .flip-card {
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: transparent;
-  width: 600px;
-  height: 500px;
-  border: 1px solid #f1f1f1;
+  width: 500px;
+  height: 400px;
+  margin: 5px;
   perspective: 1000px; 
 }
 
@@ -149,7 +150,6 @@ body{
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -161,7 +161,7 @@ body{
 
 /* Position front n back */
 .flip-card-front, .flip-card-back {
-  border-radius: 25px;
+  border-radius: 50px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -171,15 +171,24 @@ body{
 
 /* front style */
 .flip-card-front {
-  background-color: rgb(124, 58, 58);
+  background-color: #5b33127e;
   color: black;
 }
 
 /* back style */
 .flip-card-back {
-  background-color: rgb(90, 47, 47);
+  background-color: #af978a4b;
   color: rgb(0, 0, 0);
   transform: rotateY(180deg);
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.picts{
+  height: 5px;
+  width: 5px;
+  align-content: center; 
 }
 
 .num2{
@@ -187,7 +196,7 @@ body{
   min-width:471px;
   flex-grow: 1000;
   display:inline-block;
-  font-size: 12.5px;
+  font-size: 19px;
 }
 
 .wrapper {
@@ -269,23 +278,143 @@ body{
   margin: 0px;
 }
 .card .info p {
-  letter-spacing: 1px;
   font-size: 11px;
   margin-top: 3px;
 }
-.card .info button {
-  padding: 0.6rem;
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  background: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 50px;
+  padding: 0px;
 }
-.card .info button:hover {
-  background: rgb(255, 184, 30);
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #5b33127e;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: rgb(170, 159, 159);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background:#b29f94;
+  color: rgb(126, 47, 47);
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: rgb(74, 167, 46);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #573457;
+  color: rgb(204, 146, 146);
+}
+
+/* Style the header */
+.header {
+  background-color: #b29f94;
+  margin: 55px;
+  padding: 30px 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 8px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #5b33127e;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.493);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #b29f948a;
   color: white;
 }
